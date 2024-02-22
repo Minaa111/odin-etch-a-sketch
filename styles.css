@@ -83,3 +83,27 @@ button {
     border-radius: 10px;
     margin: 20px;
 }
+
+.active {
+    background-color: #0C2D57;
+}
+
+.grid-square {
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+    width: auto;
+    border-style: dashed;
+    border-color: lightgrey;
+    border-width: 1px;
+}
+
+.hover-effect {
+    background-color: lightgrey;
+}
+
+.black-color {
+    background-color: black;
+    border-color: black;
+}
+

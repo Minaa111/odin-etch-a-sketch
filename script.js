@@ -13,16 +13,16 @@ customGridBtn.addEventListener('click', () => {
     createGrid(size);
 })
 
-function createGrid (){
-    for(let i = 0; i < size; i++){
+function createGrid() {
+    for (let i = 0; i < size; i++) {
         // insert size numbered rows
         const row = document.createElement('div');
         row.setAttribute('style', 'display: flex; flex-grow: 1')
         gridContainer.append(row);
-        for(let j = 0; j < size; j++){
+        for (let j = 0; j < size; j++) {
             // insert size numbered squares into each row
             const square = document.createElement('div');
-            square.setAttribute('style', 'display: flex; flex-grow: 1; height: auto; width: auto; border-style: dashed; border-color: lightgrey; border-width: 1px');
+            square.classList.add('grid-square'); // Add grid-square class
             row.append(square)
             square.addEventListener('mouseover', () => {
                 square.classList.add('hover-effect')
@@ -30,9 +30,23 @@ function createGrid (){
             square.addEventListener('mouseout', () => {
                 square.classList.remove('hover-effect'); // Revert to default background color
             });
+            square.addEventListener('click', () => {
+                if (blackColorBtn.classList.contains('active')) {
+                    square.classList.add('black-color');
+                }
+                else if(randomColorBtn.classList.contains('active')) {
+                    square.classList.add('random-color');
+                }
+            });
         }
-    }    
+    }
 }
+
+// Toggling black color button
+const blackColorBtn = document.querySelector('.black-color-btn');
+blackColorBtn.addEventListener('click', () => {
+    blackColorBtn.classList.toggle('active');
+})
 
 
 

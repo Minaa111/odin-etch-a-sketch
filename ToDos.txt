@@ -1,0 +1,7 @@
+Add:
+1. Change colors when tapped
+2. Grid sizing button
+3. Clearing grid button
+4. Choosing a random color option button
+
+Read the challenges in the project details

@@ -12,13 +12,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #6e6588;
+    background-color: #EFECEC;
 }
 
 .header {
     display: flex;
     justify-content: center;
-    background-color: #1a1625;
+    background-color: #0C2D57;
     color: white;
 }
 
@@ -52,6 +52,34 @@ body {
     font-size: large;
     padding: 25px;
     justify-content: center;
-    background-color: #1a1625;
+    background-color: #FC6736;
     color: white;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #FFB0B0;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border-style: solid;
+    border-color: #0C2D57;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px;
 }
